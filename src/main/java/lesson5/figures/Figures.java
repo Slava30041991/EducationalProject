@@ -12,7 +12,7 @@ public class Figures {
     }
     public static void General_menu() throws IOException {
         System.out.println("Введите номер типа фигуры которую хотите создать: ");
-        System.out.println("1. Круг\n2. Треугольник\n3. Прямоугольник\n4. Квадрат");
+        System.out.println("1. Круг\n2. Треугольник\n3. Прямоугольник\n");
         String b = reader.readLine();
 
         switch (b) {
@@ -28,22 +28,12 @@ public class Figures {
                 Great_Rectangle();
                 Answer();
                 break;
-            case "4":
-                Great_Square();
-                Answer();
-                break;
             default:
                 System.out.println("Введите правильное значение");
                 General_menu();
         }
     }
-    public static void Great_Square(){
 
-        System.out.println("Введите сторону квадрата в сантиметрах: ");
-        double side = sk.nextDouble();
-        Square square = new Square(side);
-        square.Info();
-    }
     public static void Great_Rectangle(){
 
         System.out.println("Введите длину прямоугольника: ");
