@@ -1,15 +1,19 @@
 package lesson5.figures;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
+
 public class Figures {
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
     static Scanner sk = new Scanner(System.in);
     static Scanner sk2 = new Scanner(System.in);
-    public static void main (String [] args) throws IOException {
+
+    public static void main(String[] args) throws IOException {
         General_menu();
     }
+
     public static void General_menu() throws IOException {
         System.out.println("Введите номер типа фигуры которую хотите создать: ");
         System.out.println("1. Круг\n2. Треугольник\n3. Прямоугольник\n");
@@ -34,7 +38,7 @@ public class Figures {
         }
     }
 
-    public static void Great_Rectangle(){
+    public static void Great_Rectangle() {
 
         System.out.println("Введите длину прямоугольника: ");
         double length = sk.nextDouble();
@@ -43,14 +47,15 @@ public class Figures {
         Rectangle rect = new Rectangle(length, width);
         rect.Info();
     }
-    public static void Great_Triangle(){
+
+    public static void Great_Triangle() {
 
         Triangle triag = new Triangle();
         System.out.println("Введите параметры треугольника две стороны(в сантиметрах) и угол (в градусах) через пробел(указывайте запятую в дробных числах)");
         System.out.println("Последовательность: 1-е значение = сторона А, 2-е значение = сторона Б и 3-е значение = угол в градусах");
         System.out.println("");
         double[] mass = new double[3];
-        for(int i = 0; i < mass.length; i++){
+        for (int i = 0; i < mass.length; i++) {
             mass[i] = sk.nextDouble();
         }
         triag.side_a = mass[0];
@@ -60,21 +65,23 @@ public class Figures {
         triag.Perimeter();
 
     }
-    public static void Great_Circle(){
+
+    public static void Great_Circle() {
         System.out.println("Введите радиус круга (если число дробное то только через запятую): ");
         double a = sk.nextDouble();
         Circle circ = new Circle(a);
         circ.Info();
 
     }
+
     public static void Answer() throws IOException {
         System.out.println("Создать еще одну фигуру? \n1.Да\n2.Нет?");
         int answer = sk2.nextInt();
         switch (answer) {
-            case 1 :
+            case 1:
                 General_menu();
                 break;
-            case 2 :
+            case 2:
                 System.exit(0);
                 break;
         }

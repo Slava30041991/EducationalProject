@@ -1,4 +1,5 @@
 package lesson5;
+
 public class Animal implements Cloneable {
     public int appetite;
     public boolean fullness;
@@ -11,9 +12,11 @@ public class Animal implements Cloneable {
     public Animal() {
         count++;
     }
+
     public static int getCount() {
         return count;
     }
+
     @Override
     public String toString() {
         return "Вид/порода: '" + type + '\'' +

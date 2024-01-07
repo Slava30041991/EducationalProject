@@ -1,5 +1,7 @@
 package lesson5;
+
 import java.util.Scanner;
+
 public class Lesson5 {
     public static void main(String[] args) {
         int action;
@@ -56,5 +58,5 @@ public class Lesson5 {
         plate.info();
 
     }
-    }
+}
 
