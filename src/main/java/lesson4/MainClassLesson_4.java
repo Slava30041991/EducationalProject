@@ -1,7 +1,7 @@
 package lesson4;
-public class MainClassLesson_4 {
-    public static void main (String[] args) {
 
+public class MainClassLesson_4 {
+    public static void main(String[] args) {
 
 
         EmployeesLesson_4[] employees = new EmployeesLesson_4[5];

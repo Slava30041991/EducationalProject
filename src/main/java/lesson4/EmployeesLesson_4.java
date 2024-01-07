@@ -1,4 +1,5 @@
 package lesson4;
+
 public class EmployeesLesson_4 {
     private String fio, email;
     private int age;
@@ -13,7 +14,7 @@ public class EmployeesLesson_4 {
         this.age = age;
     }
 
-    public void printInfo(){
-        System.out.println("fio "+fio+"email"+email+"age "+age);
+    public void printInfo() {
+        System.out.println("fio " + fio + "email" + email + "age " + age);
     }
 }

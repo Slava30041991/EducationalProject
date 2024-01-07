@@ -8,7 +8,7 @@ public class Park {
         Park.add(new Prise("100  рублей"));
         Park.add(new AttractionName("Солнышко"));
         Park.add(new TimeWorks("С 10 до 15"));
-        for (AttractionName object: Park) {
+        for (AttractionName object : Park) {
             System.out.println(object.toString());
         }
     }
@@ -20,7 +20,7 @@ class AttractionName {
     @Override
     public String toString() {
         return "Название атракциона: "
-                 + name + "."
+                + name + "."
                 ;
     }
 
@@ -40,6 +40,7 @@ class TimeWorks extends AttractionName {
         return "Время работы атракциона: " + name + ".";
     }
 }
+
 class Prise extends AttractionName {
 
     public Prise(String prise) {
