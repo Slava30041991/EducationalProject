@@ -8,5 +8,10 @@
     <artifactId>EducationalProject</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <properties>
+        <sqlite-version>3.16.1</sqlite-version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+    </properties>
 </project>
