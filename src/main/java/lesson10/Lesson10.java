@@ -103,9 +103,7 @@ public class Lesson10 {
         System.out.println("Вес коробки №3: " + box3.getWeight());
 
 
-
     }
-
 
 
     public static <T> void SwapTwoArrayElements(T[] modifiableArray, int elemNum1, int elemNum2) {
@@ -113,7 +111,6 @@ public class Lesson10 {
         modifiableArray[elemNum1] = modifiableArray[elemNum2];
         modifiableArray[elemNum2] = backupElement;
     }
-
 
 
     public static <T> void convertArrayToArrayList(ArrayList<T> listArray, T[] convertedArray) {
